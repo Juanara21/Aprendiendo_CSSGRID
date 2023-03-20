@@ -11,7 +11,7 @@ main {
     grid-template-areas:
     "header header  header  header  header"
     "aside  section section section section"
-    "footer footer  footer  footer  footer";
+    "pie pie  pie  pie  pie";
     row-gap: 0;
     column-gap: 0;
     grid-template-rows: 10% 80% 10%;
@@ -20,8 +20,19 @@ main {
 
 header {
     grid-area: header;
-    background: #adb2b3;
-    color: #ffffffb2;
+    background: #000000;
+    color: #ffffff;
+    
+}
+#header_text{
+    padding: 15px 50px;
+    display: flex;
+    font-size: 22px;   
+    align-items: center;
+        
+}
+#header_text i{
+    margin-right: 20px;
 }
 
 aside {
@@ -33,7 +44,7 @@ aside {
 }
 
 .menu_lateral{
-    padding: 20px 10px;
+    padding: 20px 20px;
     top: 80px;
     
     }
@@ -80,6 +91,7 @@ section {
 }
 
 footer {
-    grid-area: footer;
-    border: 1px solid royalblue;
+    grid-area: pie;    
+    background: #000000;
+    color: #ffffff;
 }
