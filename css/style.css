@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
 main {
     display: grid;
     gap: 10px;
@@ -8,7 +14,7 @@ main {
     "footer footer  footer  footer  footer";
     row-gap: 0;
     column-gap: 0;
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 10% 80% 10%;
     height: 98vh;
 }
 
@@ -18,9 +24,54 @@ header {
 }
 
 aside {
+    background: #1783db;
+    color: white;
     grid-area: aside;
-    border: 1px solid royalblue;
+    font-size: 18px;
+    
 }
+
+.menu_lateral{
+    padding: 20px 10px;
+    top: 80px;
+    
+    }
+
+.menu_lateral a{
+    
+    color: #ffffffb2;
+    cursor: default;
+       
+    
+}
+
+.menu_lateral a:hover{
+    color: white;
+}
+
+
+.menu_lateral i{
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+.menu_lateral h4{
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.menu_lateral ul{
+    list-style: none; 
+   
+    
+}
+.menu_lateral li{
+     padding: 20px 10px;    
+}
+
 
 section {
     grid-area: section;
