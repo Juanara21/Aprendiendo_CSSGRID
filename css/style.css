@@ -20,7 +20,8 @@ main {
 
 header {
     grid-area: header;
-    border: 1px solid royalblue;
+    background: #adb2b3;
+    color: #ffffffb2;
 }
 
 aside {
