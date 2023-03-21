@@ -7,25 +7,26 @@
 main {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr  1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "header header  header  header  header"
-    "aside  section section section section"
-    "pie pie  pie  pie  pie";
+            "header header  header  header  header"
+            "aside cuerpo cuerpo cuerpo cuerpo"
+            "pie pie pie  pie  pie";
     row-gap: 0;
     column-gap: 0;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 90% ;
     height: 98vh;
+    
 }
 
 header {
     grid-area: header;
-    background: #000000;
+    background: #000000f1;
     color: #ffffff;
     
 }
 #header_text{
-    padding: 15px 50px;
+    padding: 15px 40px;
     display: flex;
     font-size: 22px;   
     align-items: center;
@@ -40,6 +41,7 @@ aside {
     color: white;
     grid-area: aside;
     font-size: 18px;
+    height: 100%; /* Agregamos una altura del 100% para que el aside tenga la misma altura que la ventana gráfica */
     
 }
 
@@ -86,12 +88,25 @@ aside {
 
 
 section {
-    grid-area: section;
-    border: 1px solid royalblue;
+    grid-area: cuerpo;
+    border: 0px solid royalblue;    
+    margin: 0 auto;
+    padding: 30px;
+     overflow-y: auto;
+    
 }
 
 footer {
     grid-area: pie;    
-    background: #000000;
-    color: #ffffff;
+    background: #000000dc;
+    color: #ffffffd0;
+    height: 50px;
+    
+}
+footer p{
+    padding: 15px 0px;
+    display: flex;
+    font-size: 12px;   
+    align-items: center; 
+    justify-content: center;
 }
