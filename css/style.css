@@ -4,34 +4,33 @@
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
+
 main {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
             "header header  header  header  header"
-            "aside cuerpo cuerpo cuerpo cuerpo"
+            "aside section section section section"
             "pie pie pie  pie  pie";
     row-gap: 0;
     column-gap: 0;
-    grid-template-rows: 10% 90% ;
+    grid-template-rows: 10% 90%;
     height: 98vh;
-    
 }
 
 header {
     grid-area: header;
     background: #000000f1;
     color: #ffffff;
-    
 }
+
 #header_text{
     padding: 15px 30px;
     display: flex;
     font-size: 20px;   
     align-items: center;
-        
 }
+
 #header_text i{
     margin-right: 10px;
     font-size: 30px;
@@ -43,71 +42,77 @@ aside {
     grid-area: aside;
     font-size: 18px;
     height: 100%; /* Agregamos una altura del 100% para que el aside tenga la misma altura que la ventana gráfica */
-    
 }
 
 .menu_lateral{
     padding: 20px 40px;
     top: 80px;
-    
-    }
+}
 
 .menu_lateral a{
-    
     color: #ffffffb2;
     cursor: default;
-       
-    
 }
 
 .menu_lateral a:hover{
     color: white;
 }
 
-
 .menu_lateral i{
     width: 20px;
     margin-right: 5px;
     cursor: pointer;
-    
 }
 
 .menu_lateral h4{
     font-weight: 600;
     cursor: pointer;
     display: inline-block;
-    
 }
+
 .menu_lateral ul{
     list-style: none; 
-   
-    
-}
-.menu_lateral li{
-     padding: 20px 10px;    
 }
 
+.menu_lateral li{
+    padding: 20px 10px;
+}
 
 section {
-    grid-area: cuerpo;
-    border: 0px solid royalblue;    
-    margin: 0 auto;
-    padding: 30px;
-     overflow-y: auto;
-    
+    display: grid;
+    grid-template-areas: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-footer {
-    grid-area: pie;    
-    background: #000000dc;
-    color: #ffffffd0;
-    height: 50px;
-    
+.producto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
 }
-footer p{
-    padding: 15px 0px;
-    display: flex;
-    font-size: 12px;   
-    align-items: center; 
-    justify-content: center;
+
+.producto img {
+    max-width: 100%;
+    margin-bottom: 10px;
 }
+
+.precio {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .product-grid img {
+    width: 200px;
+    height: 200px;
+  }
+  footer{
+    background-color: aquamarine;
+    text-align: center;
+  }
