@@ -112,7 +112,17 @@ section {
     width: 200px;
     height: 200px;
   }
-  footer{
-    background-color: aquamarine;
-    text-align: center;
-  }
+  footer {
+    grid-area: pie;    
+    background: #000000dc;
+    color: #ffffffd0;
+    height: 50px;
+    
+}
+footer p{
+    padding: 15px 0px;
+    display: flex;
+    font-size: 12px;   
+    align-items: center; 
+    justify-content: center;
+}
