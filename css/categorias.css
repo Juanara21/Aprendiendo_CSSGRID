@@ -5,7 +5,7 @@
 
 
 /* Estilos para la sección */
-section {
+.section_categoria {
     display: grid;
     grid-template-columns: 1fr 4fr; 
     gap: 20px;
