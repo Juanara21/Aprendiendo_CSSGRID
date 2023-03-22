@@ -125,6 +125,13 @@ section {
     grid-gap: 20px;
   }
   
+  #mi-id{ 
+    display: block;
+    text-align: center;
+    font-size: 19.5px;
+    line-height: 1.5em;
+  }
+
   .product-grid img {
     width: 200px;
     height: 200px;
