@@ -87,18 +87,16 @@ section {
     
 }
 #logo_principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+   
 }
 #texto_principal{
-   
- font-weight: 600;
+ 
+ font-weight: 200;
  cursor: pointer;
- color: rgba(0, 0, 0, 0.658);
-       
-    
-} 
+ color: rgb(0, 0, 0);
+ text-align: center;
+}
 #logo_principal{
     width: 800px;
     
