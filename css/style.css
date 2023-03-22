@@ -132,6 +132,18 @@ section {
     line-height: 1.5em;
   }
 
+.joaquin{
+   display: flex;
+   height: auto;
+   width: auto;
+   justify-items: center;
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   
+}
+
   .product-grid img {
     width: 200px;
     height: 200px;
