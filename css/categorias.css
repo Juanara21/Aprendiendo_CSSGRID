@@ -55,7 +55,7 @@
     height: 200px;
   }
   .comprar {
-    background-color: #4CAF50; 
+    background-color: #1783db; 
     border: none; 
     color: white; 
     padding: 15px 32px; 
@@ -71,6 +71,6 @@
   }
   
   .comprar:hover {
-    background-color: #1783db; 
+    background-color: #cde2f3; 
   }
   
