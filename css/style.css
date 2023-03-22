@@ -112,6 +112,8 @@ section {
     width: 200px;
     height: 200px;
   }
+
+
   footer {
     grid-area: pie;    
     background: #000000dc;
