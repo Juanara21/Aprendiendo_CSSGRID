@@ -145,6 +145,7 @@ section {
 width: 200px;
 height: 200px;
 padding: 70px;
+align-items: center;
 }
 .joaquin {
     display: grid;
@@ -154,32 +155,34 @@ padding: 70px;
   
     
   }
-  .joaquin img { 
+  /* .joaquin img { 
     width: 200px;
     height: 200px;
     padding: 70px;
     align-items: center;
-  }
+  } */
 
-  #j-id{
+  /* #j-id{
     display: block;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .migue {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 30px;
     position: relative;
+
   
     
   }
-  .migue img { 
+  /* .migue img { 
     width: 200px;
     height: 200px;
     padding: 70px;
-  }
+    align-items: center;
+  } */
   
 
   .product-grid img {
