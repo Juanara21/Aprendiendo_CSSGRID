@@ -1,87 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-}
+.logo {
+    width: 80px;
+    margin-left: auto;
+  }  
 
-main {
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-            "header header  header  header  header"
-            "aside section section section section"
-            "pie pie pie  pie  pie";
-    row-gap: 0;
-    column-gap: 0;
-    grid-template-rows: 10% 90%;
-    height: 98vh;
-}
-
-header {
-    grid-area: header;
-    background: #000000f1;
-    color: #ffffff;
-  }
-  
-  #header_text {
-    padding: 15px 30px;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    justify-content: space-between; /* Agregamos esta propiedad */
-  }
-  
-  #header_text i {
-    margin-right: 10px;
-    font-size: 30px;
-  }
-  .logo {
-    width: 100px;
-  }
-    
-
-aside {
-    background: #1783db;
-    color: white;
-    grid-area: aside;
-    font-size: 18px;
-    height: 100%; 
-}
-
-.menu_lateral{
-    padding: 20px 40px;
-    top: 80px;
-}
-
-.menu_lateral a{
-    color: #ffffffb2;
-    cursor: default;
-}
-
-.menu_lateral a:hover{
-    color: white;
-}
-
-.menu_lateral i{
-    width: 20px;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.menu_lateral h4{
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.menu_lateral ul{
-    list-style: none; 
-}
-
-.menu_lateral li{
-    padding: 20px 10px;
-}
 
 /* Estilos para la sección */
 section {
@@ -152,7 +73,4 @@ section {
   .comprar:hover {
     background-color: #3e8e41; 
   }
-  footer{
-    background-color: aquamarine;
-    text-align: center;
-  }
+  
